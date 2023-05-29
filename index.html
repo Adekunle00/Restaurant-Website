@@ -1,0 +1,565 @@
+<!doctype>
+<html>
+<head>
+<title>Restuarant Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<style type="text/css">
+html{
+    scroll-behavior:smooth;
+}
+@media only screen and (min-width:340px){
+body{
+     background:#E3E3E3;
+     min-width:95%;
+     height:auto;
+     padding: 0px 5px 0px 5px;
+     content-align:center;
+}
+}
+@media only screen and (min-width:340px){
+.nav-bar-container{
+               height:50px;
+               min-width:95%;
+               background:#E3E3E3;
+               top:0px;
+               position:fixed;
+               display:block;
+               
+               font-family: sans-seriff;
+               
+}
+}
+.kaf{
+      
+      text-align:right;
+      font-size:30px;
+      margin-left:auto;
+      font-weight:bold;
+      padding-top:10px;
+      font-family: Arial, Helvetica, sans-serif;
+      white-space:nowrap;
+}
+
+.nav-bar-image{
+          width:60px;
+          height:40px;
+          top:0px;
+          position:relative;
+          padding:5px 0px 0px 20px;
+}
+.nav-bar-imagecancel{
+    width:60px;
+    height:30px;
+    top:0px;
+    position:relative;
+    padding:11px 0px 0px 20px;
+    margin-right:25px;
+}
+.dropdownhead{
+        display:flex;
+        background:#E3E3E3;
+        height:50px;
+        
+        
+        
+}
+.nav-bar-dropdownn{
+          width:60%;
+          min-height:1000px;
+          left:0px;
+          top:0px;
+          color:black;
+          background:#E3E3E3;         
+          opacity:0.7;
+          position:absolute;
+          box-shadow:2px 3px 8px grey;
+          display:none;
+}
+@media only screen and (min-width:340px){
+.img-container{
+                margin-top:50px;
+                min-width:95%;
+                
+                height:220px;
+                background-image:url("Headerimg.jpg");
+                text-align:center;
+                padding-top:150px;
+                padding-bottom:100px;
+                
+                
+}
+}
+
+li{
+   font-size:20px;
+   padding-top:50px;
+   list-style-type:none;
+}
+a {
+   text-decoration:none;
+   color:black;
+}
+       
+     
+.hover:hover > .nav-bar-dropdownn{
+              display:block;
+              
+}
+       /*_______first page________*/
+@media only screen and (min-width:350px){
+.menu-button{
+      width:95px;
+      padding:8px 25px 8px 25px;
+      border-radius:25px;
+      color:white;
+      background:#1C475E;
+      
+}    
+}
+       /*_______about page________*/
+@media only screen and (min-width:340px){
+ .phase2{
+       min-width:95%;
+       height:750px;
+       background:#FCFCFC;
+       top:0px;
+       
+       adding20px 25px 35px 20px
+       display:flex;
+       justify-content:space-between;
+       flex-direction:column-reverse;
+       align-content:center;
+       
+} 
+}
+.phase2-content{    
+                min-width:95%;
+                height:350px;
+ }               
+ @media only screen and (min-width:340px){
+.about-img{
+           min-width:95%;
+           height:300px;
+           align:center;
+           
+}}
+@media only screen and (min-width:340px){
+.phase2-img{
+            min-width:95%;
+            align:center;
+            height:220px;
+}
+}
+/*__________TYPES OF FOOD_______*/
+@media only screen and (min-width:340px){
+.food-type{
+          min-width:95%;
+          height:auto;
+          padding-bottom:0px;
+          margin-top:20px;
+          text-align:center;
+          display:flex;
+          flex-wrap: wrap;
+          flex-direction:column;
+          
+         
+}}
+
+#food-type{
+        max-width:30%;
+        position:relative;
+}
+
+@media only screen and (min-width:340px){
+.food-list1{
+          min-width:95%;
+          height:270px;
+          box-shadow: 6px 15px 15px grey;
+          align:center;
+          margin-bottom:40px;
+          transition: .5s ease;
+          backface-visibility: hidden;
+          opacity: 1;
+          display:block;
+}}
+
+
+
+
+
+
+/*________ ______HoverPage1___________*/
+@media only screen and (min-width:340px){
+@keyframes myAnimation-first{
+          from{
+          left:-300px;
+          }
+           to{
+           left:0px;
+           }
+}
+ .hover-food-container{
+     background-color:black;
+     min-width:95%;
+     height:170px;
+     padding-top:100px;
+     text-align:center;
+     opacity: 0.8;
+     position:absolute;
+     left:0px;
+     right:0px;
+     top:0px;
+     display:none;
+     z-index:9;
+     transition: 3s ease;
+     animation-name:myAnimation-first;
+     animation-duration:1s;
+     animation-deley:0s;
+            
+}}
+.hover-food{
+     color:white;
+}
+  .learn-more-button{
+               color:white;
+               width:150px;
+               height:50px;
+               border-radius:25px;
+               margin-buttom:30px;
+               padding:5px 20px 5px 20px ;
+               font-weight:bold;
+               background:green;
+  } 
+  
+  
+  #food-type:hover > .hover-food-container{
+      display: inline-block;
+    }
+
+  /*________ .Hover page2___*/
+  
+  @media only screen and (min-width:340px){
+  @keyframes myyAnimation{
+          from{
+           left:-300px;
+           top:-150px;
+           
+          }
+          to{
+            left:0px;
+            top:0px;
+          }
+  }
+  .hover-food-container2{
+  background-color:black;
+  min-width:95%;
+  height:170px;
+  padding-top:100px;
+  text-align:center;
+  opacity: 0.8;
+  position:absolute;
+  left:0px;
+  right:0px;
+  top:0px;
+  display:none;
+  z-index:9;
+  transition: .5s ease;
+  animation-name: myyAnimation;
+  animation-duration:1s;
+  animation-delay:0s;
+  
+  }}
+#food-type2{
+        max-width:30%;
+        position:relative;
+}
+@media only screen and (min-width:340px){
+.food-list2{
+          min-width:95%;
+          height:270px;
+          box-shadow: 6px 15px 15px grey;
+          align:center;
+          margin-bottom:40px;
+          transition: .5s ease;
+          backface-visibility: hidden;
+          opacity: 1;
+          display:block;
+}}
+#food-type2:hover > .hover-food-container2{
+      display: inline-block;
+    }
+    
+    /*_______Hover page3____*/
+    @media only screen and (min-width:340px){
+    .food-list3{
+    min-width:95%;
+    height:270px;
+    box-shadow: 6px 15px 15px grey;
+    align:center;
+    margin-bottom:40px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+    display:block;
+    }}
+    @media only screen and (min-width:340px){
+    @keyframes myAnimation{
+               from{
+                  top:235px;
+               }
+               to{
+                  top:0px;
+               }
+    }
+    
+    .hover-food-container3{
+    background-color:black;
+    min-width:95%;
+    height:170px;
+    padding-top:100px;
+    text-align:center;
+    opacity: 0.8;
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    display:none;
+    z-index:9;
+    transition: 2s ease;
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    
+    }}
+    #food-type3{
+    max-width:30%;
+    position:relative;
+    }
+    #food-type3:hover > .hover-food-container3{
+    display: inline-block;
+    }
+    
+    /*_________Menu Food👇______*/
+    @media only screen and (min-width:340px){
+    .menu{
+        min-width:95%;
+        text-align:center;
+        margin-top:50px;
+        
+    }
+         .head-menu{
+            font-size:40px;
+           }
+           .price{
+             color:green;
+           }
+           .menu1{
+              max-width:100%;
+              height:370px;                
+              border-radius:50%;
+           }
+    }
+    
+    /*_____Testimonial_____*/
+    @media only screen and (min-width:340px){
+    .testimonial{
+            min-width:95%;
+            height:auto;
+            background:#C0C0C0;
+            text-align:center;
+    }
+    .customer{
+    font-size:35px;
+    }
+    .customer-img{
+     width:50%;
+     height:170px;
+     border-radius:45%;
+     padding:20px;
+    }
+}
+@media only screen and (min-width:340px){
+      .contact{
+            min-width:95%;
+            height:auto;
+            background:white;
+            padding:35px 15px;
+            text-align:center;
+      }
+      .contact-img{
+            max-width:95%;
+            height:400px;
+      }
+      .contact-form{
+                  text-align:left;
+      }
+      .contact-us{
+               font-size:40px;
+         }
+         textarea{
+             height:150px;
+             min-width:90%;
+             pading:10px;
+             border:0px;
+         }
+         .inpt{
+              width:220px;
+              border:0px;
+         }
+}
+     
+       
+        
+</style>
+
+</head>
+
+<body>
+<nav class="nav-bar-container">
+                 <div class="hover">
+                <img class="nav-bar-image"src="Navbar.jpg">          
+       <div class="nav-bar-dropdownn">
+                      <div class="dropdownhead"> 
+                             <div> <img class="nav-bar-imagecancel" src="Cancel.jpg"></div>
+                             <div class="kaf"> &nbsp;&nbsp;Kaf's &nbsp;&nbsp;Tasties	</div>
+                      </div>
+           <ul>
+                <li><a href="#img-container">Home</a></li>
+                <li><a href="#img-about">About</a></li>
+                <li><a href="#category">Category</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+  </nav> 
+
+
+     <div class="img-container"id="img-container">
+              <h2>EAT RIGHT FOOD</h2>
+              <h5>Healthy Eating, is super good for our body</h5>
+              <a href="#menu"><button class="menu-button">MENU</button></a>
+     </div>
+       
+         <div class="phase2">
+             <div class="phase2-content">
+                <p align="left">About Us</p>
+                 <h3>We've been making healthy food last for 10years</h3>
+                 <p>A new study has found that eating healthier could extend lifespan by six to seven years in middle-aged age adults, and in young adults, could increase lifespan by about ten years.Everyone wants to live longer. And we’re often told that the key to doing this is making healthier lifestyle choices, such as exercising, avoiding smoking and not drinking too much alcohol. </p>
+             </div>
+                   <div class="phase2-img">
+                        <img class="about-img" src="About-img.jpg"id="img-about">
+                     </div>
+
+        </div>
+              
+              
+              
+<div class="food-type"id="category">
+                          <h1>TYPES OF FOOD</h1>
+                          
+                          
+            <div id="food-type">
+                    <img class="food-list1" src="Food1.jpg"> 
+                         <div class="hover-food-container">
+                              <h1 class="hover-food"> Fruite</h1>
+                              <button class="learn-more-button">LEARN MORE</button>
+                        </div> 
+            </div>     
+       
+       
+       
+            <div id="food-type2">
+                <img class="food-list2" src="Food2.jpg">
+                       <div class="hover-food-container2">
+                       <h1 class="hover-food"> Vegetable</h1>
+                       <button class="learn-more-button">LEARN MORE</button>
+                       </div> 
+           </div>
+            
+            <div id="food-type3">
+                 <img class="food-list3" src="Food3.jpg">
+                        <div class="hover-food-container3">
+                        <h1 class="hover-food"> grains </h1>
+                        <button class="learn-more-button">LEARN MORE</button>
+                        </div> 
+            </div>
+ </div>
+
+                <div class="menu"id="menu">                            
+                        <p class="head-menu">Food Menu</p>
+                        <img src="Food-menu1.jpg"class="menu1">
+                        <h1>Food Menu Items1</h1>
+                        <p>The main categories within our menu are appetizers, "side orders and à la carte", entrées, desserts and beverages. Sides and à la carte include such items as soups, salads, and dips.</p>
+                         <h1 class="price">Price: $ 200</h1>
+                  <br>
+                        <img src="Food-menu2.jpg"class="menu1">
+                        <h1>Food Menu Items2</h1>
+                        <p>Your menu is your primary means of representation: It says exactly who you are and what you hope to convey personality-wise. It also should create enough of an impression so that it stays with your client long after the waiter or waitress walks off with it.</p>
+                        <h1 class="price">Price: $ 250</h1>
+                   <br>
+                        <img src="Food-menu3.jpg"class="menu1">
+                        <h1>Food Menu Items3</h1>
+                        <p>Lemon balm has a subtle lemon-mint smell when crushed, it adds a citrus flavor to beverages and salads. </p>
+                        <h1 class="price">Price: $ 150</h1>
+                  <br>
+                        <img src="Food-menu4.jpg"class="menu1">
+                        <h1>Food Menu Items4</h1>
+                        <p>This Egyptian condiment is usually a mixture of herbs, nuts, and spices. It is typically used as a dip with bread or as a topping.</p>
+                        <h1 class="price">Price: $ 300</h1>
+                  <br>
+                         <img src="Food-menu5.jpg"class="menu1">
+                         <h1>Food Menu Items5</h1>
+                         <p>The round leaves and bright flowers of your garden-variety nasturtium are both decorative and edible, adding a peppery taste to salads.</p>
+                         <h1 class="price">Price: $ 250</h1>
+                  <br>
+                          <img src="Food-menu6.jpg"class="menu1">
+                          <h1>Food Menu Items6</h1>
+                          <p>The round leaves and bright flowers of your garden-variety nasturtium are both decorative and edible, adding a peppery taste to salads.</p>
+                          <h1 class="price">Price: $ 200</h1>
+                  <br>
+                </div>
+            <div class="testimonial"id="testimonial">
+                  <p class="customer">What Our Customers Say</p>
+                  <img src="Male-photo1.jpg"class="customer-img">
+                  <h4>Albert Faith</h4>
+                  <p>⭐⭐⭐⭐⭐ </p>
+                  <p>This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.</p>
+               <br>
+                   
+                   <img src="Female-photo1.jpg"class="customer-img">
+                   <h4>Clerk Cheeryle</h4>
+                   <p>⭐⭐⭐⭐⭐ </p>
+                   <p>It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.</p>
+              <br>
+                   <img src="Male-photo2.jpg"class="customer-img">
+                   <h4>Tevex grace</h4>
+                   <p>⭐⭐⭐⭐⭐ </p>
+                   <p>. When we think about celebrations, <i><b>Kaf's Tasties</b></i> is always our first option and it never disappoints. From the starter to the dessert the quality and tastes of everything was outstanding. Service was delightful and very professional.</p>
+                   <br>
+                   
+                              <div class="contact"id="contact">
+                                    <img src="Restaurant2.jpg"class="contact-img">
+                                     <div class="contact-form">
+                                          <p class="contact-us">Contact Us</p>
+                                          <label for="text">Your Name &nbsp;&nbsp;&nbsp;<input type="text"class="inpt"></label>
+                                          <hr>
+                                          <br>
+                                          <label for="text">E-Mail&nbsp;&nbsp;&nbsp;<input type="email"class="inpt"></label>
+                                          <hr>
+                                          <br>
+                                          <label><textarea placeholder="Type Your Message..."></textarea></label>
+                                          <hr>
+                                          <button class="menu-button" type="submit">SUBMIT</button>
+                                     </div>
+                              
+                              
+                              </div>
+                   <br>
+                   <br>
+                   
+            </div>
+</body>
+</html>
